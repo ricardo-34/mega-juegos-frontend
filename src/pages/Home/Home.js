@@ -31,12 +31,9 @@ export default function Home() {
 
   return (
     <div className={styles.pageContainer}>
-<Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
-          crossOrigin="anonymous"
-        />
+      <Helmet>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
+          crossorigin="anonymous"></script>
       </Helmet>
 
       {/* Hero Header */}
