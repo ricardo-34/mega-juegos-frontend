@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import API from '../../services/api';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
@@ -42,7 +43,7 @@ export default function Home() {
 
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
         crossorigin="anonymous"></script>
-        
+
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.mainTitle}>Mega Juegos PC</h1>
