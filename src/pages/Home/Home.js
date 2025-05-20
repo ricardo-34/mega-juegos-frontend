@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
 import API from '../../services/api';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
@@ -31,20 +30,11 @@ export default function Home() {
 
   return (
     <div className={styles.pageContainer}>
-      <Helmet>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
-          crossorigin="anonymous"></script>
-      </Helmet>
-
       {/* Hero Header */}
-
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
-        crossorigin="anonymous"></script>
-
+      
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.mainTitle}>Mega Juegos PC</h1>
-
 
         </div>
       </div>
@@ -62,20 +52,20 @@ export default function Home() {
           {games.map(game => (
             <Link key={game._id} to={`/game/${game._id}`} className={styles.gameCard}>
               <div className={styles.imageContainer}>
-                <img
-                  src={game.imagenUrl}
+                <img 
+                  src={game.imagenUrl} 
                   alt={game.nombre}
                   className={styles.gameImage}
                 />
                 <div className={styles.overlay}>
                   <div className={styles.playButton}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M8 5v14l11-7z" fill="currentColor" />
+                      <path d="M8 5v14l11-7z" fill="currentColor"/>
                     </svg>
                   </div>
                 </div>
               </div>
-
+              
               <div className={styles.gameInfo}>
                 <h3 className={styles.gameTitle}>{game.nombre}</h3>
                 <div className={styles.gameDetails}>
@@ -84,7 +74,7 @@ export default function Home() {
                   )}
                   <span className={styles.price}>GRATIS</span>
                 </div>
-
+                
                 {/* Ratings Preview */}
                 {(game.jugabilidad || game.historia || game.graficos) && (
                   <div className={styles.ratingsPreview}>
