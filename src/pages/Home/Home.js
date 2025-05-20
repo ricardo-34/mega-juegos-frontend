@@ -31,9 +31,13 @@ export default function Home() {
   return (
     <div className={styles.pageContainer}>
       {/* Hero Header */}
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684645291777265"
+     crossorigin="anonymous"></script>
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.mainTitle}>Mega Juegos PC</h1>
+          
 
         </div>
       </div>
