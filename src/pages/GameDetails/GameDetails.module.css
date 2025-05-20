@@ -1,0 +1,358 @@
+/* Loading State */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  color: #f5f6f7;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #2a2a2a;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Page Container */
+.pageContainer {
+  background-color: #121212;
+  color: #f5f6f7;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  padding: 3rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gameTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.gameInfo {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.gameMetadata {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.metadataItem {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.metadataItem strong {
+  color: #f5f6f7;
+}
+
+.actionSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.downloadButton {
+  background: linear-gradient(135deg, #007bff, #0056d6);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.downloadButton:hover {
+  background: linear-gradient(135deg, #0056d6, #004494);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.gamePrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00d4ff;
+}
+
+.heroImage {
+  position: relative;
+}
+
+.gameImage {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gameImage:hover {
+  transform: scale(1.02);
+}
+
+/* Content Container */
+.contentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #f5f6f7;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Ratings Section */
+.ratingsSection {
+  margin-bottom: 4rem;
+}
+
+.ratingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.ratingCard {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.ratingCard:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ratingLabel {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ratingValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 0.75rem;
+}
+
+.ratingBar {
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ratingFill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+/* Info Section */
+.infoSection {
+  margin-bottom: 4rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.infoItem {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoLabel {
+  font-size: 0.875rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.infoValue {
+  font-weight: 600;
+  color: #f5f6f7;
+}
+
+.changelogSection {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.changelogTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.changelogText {
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Requirements Section */
+.requirementsSection {
+  margin-bottom: 4rem;
+}
+
+.requirementsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.requirementCard {
+  background: #1e1e1e;
+  border-radius: 12px;
+  border: 1px solid #333;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.requirementCard:hover {
+  border-color: #007bff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.requirementTitle {
+  background: linear-gradient(135deg, #007bff, #0056d6);
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.requirementsList {
+  padding: 1.5rem;
+}
+
+.requirementItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #333;
+  gap: 1rem;
+}
+
+.requirementItem:last-child {
+  border-bottom: none;
+}
+
+.reqLabel {
+  font-size: 0.875rem;
+  color: #888;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.reqValue {
+  color: #f5f6f7;
+  text-align: right;
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .gameTitle {
+    font-size: 2rem;
+  }
+  
+  .actionSection {
+    justify-content: center;
+  }
+  
+  .gameMetadata {
+    justify-content: center;
+  }
+  
+  .contentContainer {
+    padding: 2rem 1rem;
+  }
+  
+  .ratingsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .requirementsContainer {
+    grid-template-columns: 1fr;
+  }
+}

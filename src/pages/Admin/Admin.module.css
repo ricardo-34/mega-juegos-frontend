@@ -1,0 +1,47 @@
+.container {
+  padding: 2rem;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.form h4 {
+  grid-column: span 2;
+  margin-top: 1rem;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+.form button {
+  grid-column: span 2;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.list {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.list button {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
